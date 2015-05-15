@@ -24,7 +24,7 @@ apt-get install notifyosdconfig
 
 # Install patched Ubuntu Mono Powerline fonts
 git clone https://github.com/pdf/ubuntu-mono-powerline-ttf.git \
-    /usr/share/fonts/
+    /usr/share/fonts/ubuntu-mono-powerline-ttf
 fc-cache -vf
 
 # Install the beautiful Numix circle icon theme
