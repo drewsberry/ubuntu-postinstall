@@ -92,7 +92,7 @@ cd
 
 # Install  nodejs and link it to standard location
 apt-get install nodejs
-ln -s /usr/bin/node /usr/bin/nodejs
+ln -s /usr/bin/nodejs /usr/bin/node
 
 # Install java runtime and development kit
 apt-get install default-jre default-jdk
