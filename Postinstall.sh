@@ -151,7 +151,7 @@ apt-get install indicator-netspeed
 
 # eCryptfs
 apt-get install ecryptfs-utils
-# Now run ecryptfs-setup-private
+echo "Now run ecryptfs-setup-private"
 
 ## Android
 
