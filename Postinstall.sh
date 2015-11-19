@@ -120,9 +120,14 @@ pip install hackertray
 hackertray &
 
 # Caffeine
-add-apt-repository ppa:caffeine-developers/caffeine-dev
-apt-get update
-apt-get install caffeine
+(add-apt-repository ppa:caffeine-developers/ppa &&
+ apt-get update &&
+ apt-get install caffeine) || 
+(apt-get update &&
+ apt-get install libappindicator3-1 &&
+ apt-get install gir1.2-appindicator3-0.1 &&
+ echo "Cannot use ppa for caffeine install. Please install correct version from:" &&
+ echo "http://ppa.launchpad.net/caffeine-developers/ppa/ubuntu/pool/main/c/caffeine/")
 
 # Calendar Indicator
 add-apt-repository ppa:atareao/atareao
